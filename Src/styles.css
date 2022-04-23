@@ -1,0 +1,210 @@
+body{
+	font-family: 'Press Start 2P', cursive;
+	cursor: url( "images/happyhalo.png");
+
+}
+
+Section{
+	background-color: #94908D;	
+
+	}
+	.main{
+		
+		background-color: #31302E;
+		height: 100vh;
+		color: #C3C2BE;
+		font-size: 40px;
+}
+footer{
+	background-color: #C3C2BE;
+	color: white;
+}
+
+nav{
+	display: flex;
+	justify-content: space-between;
+	text-align: right;
+
+}
+
+ul{
+	display: flex;
+	justify-content: space-between;
+	list-style-type: none; 
+	width:450px;
+	font-size: 15px;
+	
+}
+
+
+li{
+	text-decoration: none;
+}
+
+/*text-beginning*/
+h1{
+	font-size: 90px;
+	margin: .025;
+}
+h2{
+	font-size: 50px; 
+}
+p{
+		margin: .025;
+}
+.sub-text{
+	font-size: 15px;
+	font-weight: 300;
+}
+
+
+/*text-end*/
+
+.main-area{
+	display: flex;
+	height: 100%;
+	justify-content: space-between;
+	align-items: center;
+}
+.main-text{
+	margin-left: 80px;
+	margin-bottom: 200px;
+}
+.button{
+	width: 450px;
+	height: 100px;
+	border-radius: 30px;
+	background-color: #000000;
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 15px;
+	color: mintcream;
+		
+}
+
+.button:hover{
+	background-color: black;
+	color: gold;
+}
+.button:active{
+	background-color: black;
+	color: darkred;
+}
+.logo{
+	margin: 15px;
+}
+.socials{
+	padding-bottom: 200px;
+}
+.socials-icon{
+	display: flex;
+	height: 25px;
+	margin: 13px;
+
+}
+
+.sub-section{
+	
+	display: flex;
+	justify-content: space-around;
+	padding: 80px;
+}
+.sub-section2{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding: 80px;
+}
+
+.sub-sectionQA{
+	
+	display: flex;
+	justify-content: space-around;
+	
+}
+
+.headshot{
+	width: 300px;
+	border-radius: 300px;
+}
+.headshot-container{
+	display: flex;
+	align-items: center;
+}
+.project-card{
+	width: 300px;
+	height: 500px;
+	box-shadow: 5px 5px 10px 5px gold;
+	margin: 10px;
+}
+.project-container{
+	display: flex;
+	justify-content: space-around;
+}
+
+@media only screen and (max-width:1000px){
+	.project-container{
+		display: flex;
+		flex-wrap: wrap;
+		
+	}	
+}
+
+.project-image{
+	margin-top: 25px;
+	width: 250px;
+	border-radius: 125px;
+}
+.project-link{
+	color: gold;
+	text-decoration: none;
+	
+}
+hr{
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+a{
+	text-decoration: none;
+	color: #94908D;
+}
+
+.hamburger{
+	display: none;
+	}
+
+.hamburger:focus{
+	outline: 0;
+}
+
+@media only screen and (max-width: 1000px){
+	.hamburger{
+		display: block;
+		border: 0;
+		background-color: transparent;
+		font-size: 30px;
+		margin: 20px;
+		align-self: center;
+	}
+	ul{
+		display: none;
+		background-color: transparent;
+		text-align-last: center;
+		margin: 0px;
+	}
+	
+	ul.show{
+	display: block;
+	}
+	
+	nav{
+	display: flex;
+	flex-direction: column-reverse;
+	background-color: darkred;
+	}
+	
+	.logo {
+		display: none;
+	}
+}
