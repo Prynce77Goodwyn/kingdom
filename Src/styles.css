@@ -16,8 +16,9 @@ Section{
 		font-size: 40px;
 }
 footer{
-	background-color: #C3C2BE;
-	color: white;
+	background-color: #010101;
+	color: #C3C2BE;
+	padding-top: 1px;
 }
 
 nav{
