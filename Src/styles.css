@@ -1,5 +1,6 @@
 body{
 	font-family: 'Press Start 2P', cursive;
+	cursor: url( "images/happyhalo.png");
 
 }
 
@@ -113,6 +114,13 @@ p{
 	flex-direction: column;
 	text-align: center;
 	padding: 80px;
+}
+
+.sub-sectionQ&A{
+	
+	display: flex;
+	justify-content: space-around;
+	
 }
 
 .headshot{
