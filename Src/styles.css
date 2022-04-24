@@ -2,7 +2,9 @@ body{
 	font-family: 'Press Start 2P', cursive;
 cursor:url("images/halfandhalf (2).png"), auto;
 }
-
+.link:hover {
+     cursor: default;
+     }
 
 Section{
 	background-color: #94908D;	
@@ -79,7 +81,7 @@ p{
 	color: #C3C2BE;
 		
 }
-
+  
 .button-text1:hover{
 	background-color: black;
 	color: gold;
