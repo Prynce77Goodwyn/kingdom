@@ -50,8 +50,13 @@ h2{
 	font-size: 50px; 
 }
 p{
-		margin: .025;
+	margin: .025;
 }
+
+.quick-link-text{
+	cursor:url("images/halfandhalf (2).png"), auto;
+}
+
 .sub-text{
 	font-size: 15px;
 	font-weight: 300;
