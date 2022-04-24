@@ -19,6 +19,13 @@ footer{
 	color: #C3C2BE;
 	padding: 1px;
 }
+.contact-form{
+	width: 100%;
+	height: 100vh;
+	background-image: url("images/ddcqjfz-cb72ae2d-5aac-489e-8816-dfbe3c1286ad.png");
+	background-position: center;
+	background-size: cover;
+}
 
 nav{
 	display: flex;
