@@ -1,6 +1,6 @@
 body{
 	font-family: 'Press Start 2P', cursive;
-cursor:url("images/halfandhalf (2).png"), auto;
+	margin: 0px;
 }
 
 Section{
@@ -64,7 +64,6 @@ label{
 	background: transparent;
 	border: 1px solid #fff;
 	width: 100%;
-	cursor: url("images/halfandhalf (2).png");
 }
 input:focus~label,input:valid~label,textarea:focus~label, textarea:valid~label{
 	top: -35px;
@@ -114,9 +113,7 @@ p{
 	margin: .025;
 }
 
-.quick-link-text{
-	cursor:url("images/halfandhalf (2).png"), auto;
-}
+
 
 .sub-text{
 	font-size: 15px;
@@ -148,12 +145,10 @@ p{
 .button-text1:hover{
 	background-color: black;
 	color: gold;
-	cursor:url("images/halfandhalf (2).png"), auto;
 }
 .button-text1:active{
 	background-color: black;
 	color: indigo;
-	cursor:url("images/halfandhalf (2).png"), auto;
 }
 
 .logo{
@@ -166,7 +161,6 @@ p{
 	display: flex;
 	height: 35px;
 	margin: 13px;
-	cursor:url("images/halfandhalf (2).png"), auto;
 }
 
 .sub-section{
@@ -225,7 +219,6 @@ p{
 .project-link{
 	color: gold;
 	text-decoration: none;
-	cursor:url("images/halfandhalf (2).png"), auto;
 	
 }
 hr{
