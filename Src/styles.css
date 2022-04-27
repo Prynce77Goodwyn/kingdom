@@ -12,7 +12,7 @@ Section{
 	.main{
 		
 		background-color: #31302E;
-		min-height: 100vh;
+		height: 105vh;
 		color: #C3C2BE;
 		font-size: 40px;
 		
@@ -50,7 +50,6 @@ input, textarea{
 	color: #fff;
 	background: transparent;
 	font-size:15px;
-	cursor: url("images/halfandhalf (2).png")
 }
 label{
 	height: 100%;
@@ -59,7 +58,6 @@ label{
 	top: 0;
 	padding: 10px;
 	color: #fff;
-	cursor: url("images/halfandhalf (2).png");	
 	transition: 0.2s;
 }
 .button-contact{
