@@ -1,7 +1,7 @@
 body{
 	font-family: 'Press Start 2P', cursive;
 	margin: 0;
-	overflow-x: hidden; 
+	overflow-x: hidden;
 
 }
 
@@ -12,10 +12,13 @@ Section{
 	.main{
 		
 		background-color: #31302E;
-		height: 100vh;
+		min-height: 100vh;
 		color: #C3C2BE;
 		font-size: 40px;
+		
 }
+
+
 footer{
 	background-color: #010101;
 	color: #C3C2BE;
@@ -26,13 +29,13 @@ footer{
 	height: 100vh;
 	background-image: linear-gradient(rgba(0,0,0,0.7), gold ), url("images/Duality.png");
 	background-position: center;
-	background-size: cover;
+	background-size:auto;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 form{
-	width: 90%;
+	width: auto;
 	max-width: 600px;
 }
 .input-group{
@@ -105,16 +108,23 @@ li{
 
 /*text-beginning*/
 h1{
-	font-size: 90px;
+	font-size: calc(2rem + 3vw);
 	margin: .025;
 }
 h2{
-	font-size: 50px; 
+	font-size: 30px; 
+	margin: .025;
 }
 p{
+
 	margin: .025;
 }
 
+.main-main-text{
+		font-size: calc(1rem + 1vw);
+
+	
+}
 
 
 .sub-text{
@@ -243,6 +253,7 @@ a{
 	outline: 0;
 }
 
+
 @media only screen and (max-width: 1000px){
 	.hamburger{
 		display: block;
@@ -286,4 +297,16 @@ a{
 
 }
 
-	
+	@media only screen and (max-width: 1000px) {
+   
+    
+    .main-area{
+        display: inline-block;
+    }
+		
+		@media all and (max-width:30em){
+ a.button4{
+  display:block;
+  margin:0.2em auto;
+ }
+}
