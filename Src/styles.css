@@ -1,10 +1,17 @@
-body{
+*{
+	margin: 0;
+	padding: 0;
 	font-family: 'Press Start 2P', cursive;
-	background: linear-gradient(-45deg, red, green, blue, yellow, purple);
-	background-size: 800% 800%;
+
+}
+
+body{
+	background: linear-gradient(-45deg, #ee7752,
+	#e73c7e, #9581F4, #23a6d5, #23d5ab, purple, blue);
+	background-size: 41000% 400%;
 	width: 100%;
-	height: 100%;
-	animation: animate 15s ease infinite;
+	height: 100vh;
+	animation: animate 10s linear infinite;
 }
 
 .hero-nav-section ul{
@@ -15,8 +22,9 @@ body{
 
 .hero-nav-section ul li{
 	display: inline-block;
-	padding: 25px 92px;
+	padding: 25px 80px;
 	text-align: center;
+	margin: auto;
 }
 
 .hero-nav-section ul li a{
@@ -35,22 +43,26 @@ body{
 
 @keyframes animate{
 	0%{
-		background-position: 0 50%;
+		background-position: 0% 50%;
 	}
 	
 	50%{
-		background-position: 50% 50%;
+		background-position: 100% 50%;
 	}
 	
 	100%{
-		background-position: 0 50%;
+		background-position: 0% 50%;
 	}
+}
+.hero-section{
+	height: 100vh;
 }
 
 .hero-text h2{
 	text-align: center;
 	color: #000;
 	font-size: 60px;
+	padding-bottom: 20px;
 }
 
 .hero-button{
@@ -93,12 +105,13 @@ body{
 
 .about-me-section{
 	display: flex;
+	padding: 30vh;
 }
 .project-section{
 	display: flex;
 	flex-direction: column;
 	text-align: center;
-	padding: 80px;
+	padding: 25vh;
 }
 
 .project-text{
@@ -120,9 +133,15 @@ body{
 
 .FAQ-section{
 	display: flex;
-	justify-content: space-around;	
 }
 
+.FAQ-section h3 {
+	padding: 15px;
+}
+
+.FAQ-section p {
+	padding-bottom: 25px;
+}
 
 .contact-section{
 	
