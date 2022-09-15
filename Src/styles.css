@@ -1,48 +1,133 @@
 body{
 	font-family: 'Press Start 2P', cursive;
-	margin: 0;
-	overflow-x: hidden;
-
+	background: linear-gradient(-45deg, red, green, blue, yellow, purple);
+	background-size: 800% 800%;
+	width: 100%;
+	height: 100%;
+	animation: animate 15s ease infinite;
 }
 
-.gradient {
-	width: 40vw;
-	height: 20vw;
-	background: linear-gradient (-45degree, #ee7752,
-				#e73c7e, #95814F4, #23a6d5, #23d5ab);
-	background-size: 400% 400%;
-	animation: gradient 10s ease infinite;
-	border-radius: 20px;
-	box-shadow: 0px 0px 20px black;
+.hero-nav-section ul{
+	height: 125px;
+	display: flex;
+	justify-content: center;
 }
 
-@keyframes gradient{
+.hero-nav-section ul li{
+	display: inline-block;
+	padding: 25px 92px;
+	text-align: center;
+}
+
+.hero-nav-section ul li a{
+	text-decoration: none;
+	color: black;
+	text-transform: uppercase;
+	font-size: 20px;
+	padding: 5px 4px;
+}
+
+.hero-nav-section ul li a:hover{
+	background: linear-gradient(-45deg, red, green, blue, yellow, purple);
+	background-size: 100% 100%;
+	color: #000;
+}
+
+@keyframes animate{
 	0%{
-		background-position: 0% 50%:
+		background-position: 0 50%;
 	}
+	
 	50%{
-		background-position: 100% 50%:
+		background-position: 50% 50%;
 	}
+	
 	100%{
-		background-position: 0% 50%:
+		background-position: 0 50%;
 	}
 }
 
-	.main{
-		
-		background-color: #31302E;
-		height: 105vh;
-		color: #C3C2BE;
-		font-size: 40px;
-		
+.hero-text h2{
+	text-align: center;
+	color: #000;
+	font-size: 60px;
+}
+
+.hero-button{
+	width: 450px;
+	height: 100px;
+	border-radius: 30px;
+	background-color: #000000;
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 15px;	
+	margin: auto;
+}
+
+.hero-button-text{
+	font-size: 40px;
+	color: brown;
+}
+
+.hero-button-text:hover{
+	background-color: black;
+	color: gold;
+}
+
+.hero-button-text:active{
+	background-color: black;
+	color: indigo;
+}
+
+.hero-socials-layout{
+	padding-top: 10px;
+	padding-bottom: 5px;
+	text-align: center;
+
+}
+
+.hero-socials-icon{
+	height: 35px;
+	margin: 13px;
+}
+
+.about-me-section{
+	display: flex;
+}
+.project-section{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding: 80px;
+}
+
+.project-text{
+	font-size: 15px;
+	font-weight: 300;
+}
+
+.project-card{
+	width: 300px;
+	height: 500px;
+	box-shadow: 5px 5px 10px 5px gold;
+	margin: 10px;
+}
+
+.project-container{
+	display: flex;
+	justify-content: space-around;
+}
+
+.FAQ-section{
+	display: flex;
+	justify-content: space-around;	
 }
 
 
-footer{
-	background-color: #010101;
-	color: #C3C2BE;
-	padding: 1px;
+.contact-section{
+	
 }
+
 .contact-form{
 	width: 100%;
 	height: 100vh;
@@ -53,14 +138,17 @@ footer{
 	align-items: center;
 	justify-content: center;
 }
+
 form{
 	width: auto;
 	max-width: 600px;
 }
-.input-group{
+
+.contact-input-group{
 	margin-bottom: 30px;
 	position: relative;
 }
+
 input, textarea{
 	width: 100%;
 	padding: 10px;
@@ -70,16 +158,17 @@ input, textarea{
 	background: transparent;
 	font-size:15px;
 }
+
 label{
 	height: 100%;
 	position: absolute;
 	left: 0;
 	top: 0;
 	padding: 10px;
-	color: #fff;
 	transition: 0.2s;
 }
-.button-contact{
+
+.contact-button{
 	padding: 10px 0;
 	color: #fff;
 	outline: none;
@@ -87,167 +176,31 @@ label{
 	border: 1px solid #fff;
 	width: 100%;
 }
+
 input:focus~label,input:valid~label,textarea:focus~label, textarea:valid~label{
 	top: -35px;
 	font-size: 14px;
-	
 }
-.form-row{
+
+.contact-form-row{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 }
-.form-row .input-group{
+
+.contact-form-row .contact-input-group{
 	flex-basis: 46%;
 }
 
-.nav{
-	background-color: black;
-		height: 100%;
-		color: #C3C2BE;
-		font-size: 40px;
-		
-}
-.nav-list{
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-end;
-	align-items: flex-start;
-		background-color: black;
-
-	
-
-}
-
-ul{
-	display: flex;
-	justify-content: space-between;
-	list-style-type: none; 
-	width:450px;
-	font-size: 15px;
-	
-}
-
-
-li{
-	text-decoration: none;
-}
-
-/*text-beginning*/
-h1{
-	font-size: calc(2rem + 3vw);
-	margin: .025;
-}
-h2{
-	font-size: 30px; 
-	margin: .025;
-}
-p{
-
-	margin: .025;
-}
-
-.main-main-text{
-		font-size: calc(1rem + 1vw);
-
-	
-}
-
-
-.sub-text{
-	font-size: 15px;
-	font-weight: 300;
-}
-
-.main-area{
-	display: flex;
-	height: 100%;
-	justify-content: space-between;
-	align-items: center;
-}
-.main-text{
-	margin-left: 80px;
-	margin-bottom: 200px;
-}
-.button1{
-	width: 450px;
-	height: 100px;
-	border-radius: 30px;
-	background-color: #000000;
-	text-align: center;
-	padding-top: 30px;
-	padding-bottom: 15px;
+footer{
+	background-color: #010101;
 	color: #C3C2BE;
-		
-}
-  
-.button-text1:hover{
-	background-color: black;
-	color: gold;
-}
-.button-text1:active{
-	background-color: black;
-	color: indigo;
-}
-
-.logo{
-	display: flex;
-	justify-content: flex-start;
-	margin: 15px;
-}
-.socials{
-	display: flex;
-	flex-flow: column wrap;
-	padding-bottom: 200px;
-
-}
-.socials-icon{
-	height: 35px;
-	margin: 13px;
-}
-
-.sub-section{
-	
-	display: flex;
-	justify-content: space-around;
-	padding: 80px;
-}
-.sub-section2{
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-	padding: 80px;
-}
-
-.sub-sectionFAQ{
-	
-	display: flex;
-	justify-content: space-around;
-	
-}
-
-.headshot{
-	width: 300px;
-	border-radius: 300px;
-}
-.headshot-container{
-	display: flex;
-	align-items: center;
-}
-.project-card{
-	width: 300px;
-	height: 500px;
-	box-shadow: 5px 5px 10px 5px gold;
-	margin: 10px;
-}
-.project-container{
-	display: flex;
-	justify-content: space-around;
+	padding: 1px;
 }
 
 @media only screen and (max-width:1000px){
 	
-	.main-area{
+	.hero-area{
 		height: auto;
 	}
 	
@@ -308,19 +261,19 @@ a{
 	display: block;
 	}
 	
-	nav{
+	hero-nav{
 	display: flex;
 	flex-direction: column-reverse;
 	background-color: indigo;
 	}
 	
-	.logo {
+	.hero-logo {
 		display: none;
 	}
 	
 	@media only screen and (max-width:1000px){
 
-.socials-icon{
+.hero-socials-icon{
 	display: inline-flex;
 	height: 80px;
 	margin: 13px;
@@ -334,7 +287,7 @@ a{
 	@media only screen and (max-width: 1000px) {
    
     
-    .main-area{
+    .hero-area{
         display: inline-block;
     }
 		
