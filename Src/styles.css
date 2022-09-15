@@ -1,14 +1,33 @@
 body{
-	font-family: 'Alumni Sans Inline One', cursive;
+	font-family: 'Press Start 2P', cursive;
 	margin: 0;
 	overflow-x: hidden;
 
 }
 
-Section{
-	background-color: #94908D;	
+.gradient {
+	width: 40vw;
+	height: 20vw;
+	background: linear-gradient (-45degree, #ee7752,
+				#e73c7e, #95814F4, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+	border-radius: 20px;
+	box-shadow: 0px 0px 20px black;
+}
 
+@keyframes gradient{
+	0%{
+		background-position: 0% 50%:
 	}
+	50%{
+		background-position: 100% 50%:
+	}
+	100%{
+		background-position: 0% 50%:
+	}
+}
+
 	.main{
 		
 		background-color: #31302E;
@@ -82,11 +101,21 @@ input:focus~label,input:valid~label,textarea:focus~label, textarea:valid~label{
 	flex-basis: 46%;
 }
 
-
-nav{
+.nav{
+	background-color: black;
+		height: 100%;
+		color: #C3C2BE;
+		font-size: 40px;
+		
+}
+.nav-list{
 	display: flex;
-	justify-content: space-between;
-	text-align: right;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: flex-start;
+		background-color: black;
+
+	
 
 }
 
@@ -162,14 +191,17 @@ p{
 }
 
 .logo{
+	display: flex;
+	justify-content: flex-start;
 	margin: 15px;
 }
 .socials{
- padding-bottom: 200px;
+	display: flex;
+	flex-flow: column wrap;
+	padding-bottom: 200px;
 
 }
 .socials-icon{
-	display: flex;
 	height: 35px;
 	margin: 13px;
 }
