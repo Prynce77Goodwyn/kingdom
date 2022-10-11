@@ -143,6 +143,13 @@ body{
 	padding-bottom: 25px;
 }
 
+.merch-section{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding: 25vh;
+}
+
 .contact-section{
 	
 }
