@@ -291,36 +291,7 @@ footer{
 }
 
 @media only screen and (max-width: 1000px){
-	
-	.hamburger{
-		display: block;
-		border: 0;
-		background-color: transparent;
-		font-size: .75rem;
-		margin: 1rem;
-	}
-	
-	.hamburger:focus{
-		outline: 0;
-	}
-
-	.hero-nav-bar{
-		display: flex;
-		justify-content: center;
-		background-color: indigo;
-	}
-	
-	.hero-nav-bar ul{
-		display: none;
-		background-color: transparent;
-		text-align-last: center;
-		margin: 0px;
-	}
-	
-	.heroNavMenu ul.show{
-		display: block;
-	}
-	
+		
 	.about-me-information p{
 		justify-content: center;
 		word-wrap: break-word;
@@ -347,14 +318,6 @@ footer{
 	}
 }
 		
-@media all and (max-width:30em){
-	
- a.button4{
-	  display:block;
-	  margin:0.2em auto;
-	}
-}
-	
 @media (max-width: 8.5in){ 
 	 :root {font-size: 18px; 
 	}
