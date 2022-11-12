@@ -1,8 +1,8 @@
-const hamburgerbutton = document.getElementById('hamburger')
-const navList = document.getElementById('nav-list')
+const hamburgerbutton = document.getElementById(".hamburgerbutton");
+const heroNavMenu = document.getElementById(".heroNavMenu");
+
+hamburgerbutton.addEventListener("click", toggleButton)
 
 function toggleButton(){
-	navList.classList.toggle('show')
+	heroNavMenu.classList.toggle("show");
 }
-
-hamburgerbutton.addEventListener('click', toggleButton)

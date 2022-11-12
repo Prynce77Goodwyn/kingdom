@@ -304,20 +304,20 @@ footer{
 		outline: 0;
 	}
 
-	.hero-nav-section{
+	.hero-nav-bar{
 		display: flex;
 		justify-content: center;
 		background-color: indigo;
 	}
 	
-	.hero-nav-section ul{
+	.hero-nav-bar ul{
 		display: none;
 		background-color: transparent;
 		text-align-last: center;
 		margin: 0px;
 	}
 	
-	.hero-nav-section ul.show{
+	.heroNavMenu ul.show{
 		display: block;
 	}
 	
