@@ -11,6 +11,10 @@ body{
 	margin-left: 1rem;
 }
 
+.hero-nav-section{
+	background-color: indigo;
+}
+
 .hero-nav-section ul{
  	margin: 0;
     text-align:center;
@@ -24,7 +28,7 @@ body{
 }
 
 .hero-nav-section a{
-	padding: .5rem;
+	padding: .25rem;
 }
 
 .hero-nav-section li a:hover{
@@ -58,8 +62,7 @@ body{
 	text-align: center;
 	padding-top: 10rem !important;
 	max-height: 100vh;
-	border: thick;
-	border-style: solid;
+	border: thick solid;
 }
 
 .hero-text h2{
@@ -82,10 +85,10 @@ body{
 
 .hero-button-text{
 	font-size: 2.5rem;
-	color: brown;
+	color: gold;
 }
 
-.hero-button-text:hover, .hero-button:hover{
+.hero-button:hover{
 	background: linear-gradient(45deg, gold, darkgoldenrod);
 	background-size: 300% 400%;
 	animation: animate 1s linear infinite;
@@ -98,36 +101,44 @@ body{
 }
 
 .about-me-section{
-	min-height: 60vh;
-	min-width: 100%;
-	display: flex;
-	justify-content: center;
-	text-align: center;
-	padding-top: 10rem !important;
-	max-height: 100vh;
-	border: thick;
-	border-style: solid;
-}
-
-.about-me-section h1{
-	padding-bottom: 5rem;
-}
-
-
-.project-section{
 	min-height: 100vh;
 	min-width: 100%;
 	display: flex;
 	justify-content: center;
 	text-align: center;
-	padding-top: 10rem !important;
-	border: thick;
-	border-style: solid;
+	border: thick solid;
+}
+
+.about-me-section h1{
+	margin-top: 5rem;
+	margin-bottom: 5rem;
+}
+
+.about-me-information p{
+	justify-content: center;
+	word-wrap: break-word;
+	margin-top: 13rem;
+}
+
+.project-section{
+	min-height: 100vh;
+	min-width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	border: thick solid;
+}
+
+.project-section h2{
+	font-size: 1rem;
+	margin-bottom: 5rem;
 }
 
 .project-text{
 	font-size: 1rem;
 	padding: 1rem;
+	word-wrap: break-word;
 }
 
 .project-card{
@@ -138,42 +149,50 @@ body{
 
 .project-container{
 	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
 }
 
 .project-image{
-		margin-top: 1rem;
-		height: 10rem;
-		width: 17rem;
-		border-radius: 3rem;
-		padding-bottom: 1rem;
-	}
+	margin-top: 1rem;
+	height: 10rem;
+	width: 17rem;
+	border-radius: 3rem;
+	padding-bottom: 1rem;
+}
 
 .project-link{
-		color: gold;
-		text-decoration: none;
-	}
+	color: gold;
+	text-decoration: none;
+}
 
 .project-more-info{
-		color: cyan;
-		text-decoration: none;
-	}
+	color: cyan;
+	text-decoration: none;
+}
 
 .FAQ-section{
-	min-height: 60vh;
-	max-height: 100vh;
+	min-height: 100vh;
 	min-width: 100%;
 	display: flex;
-	padding-top: 10rem !important;
-	border: thick;
-	border-style: solid;
+	justify-content: center;
+	border: thick solid;
+	
 }
 
-.FAQ-section h3 {
-	padding: 15px;
+.FAQ-section h2{
+	text-align: center;
+	margin-top: 5rem;
+	margin-bottom: 5rem;
 }
 
-.FAQ-section p {
-	padding-bottom: 25px;
+.FAQ-section p{
+	padding: 2rem;
+}
+
+.FAQ-section ul li{
+	padding: .5rem .5rem .5rem 2rem;
+	list-style: none;
 }
 
 .merch-section{
@@ -184,12 +203,11 @@ body{
 	text-align: center;
 	padding-top: 10rem !important;
 	max-height: 100vh;
-	border: thick;
-	border-style: solid;
+	border: thick solid;
 }
 
 .contact-section{
-	
+	border: thick solid;
 }
 
 .contact-form{
@@ -201,8 +219,6 @@ body{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	border: thick;
-	border-style: solid;
 }
 
 form{
@@ -274,44 +290,6 @@ footer{
 	margin: 1.5rem;
 }
 
-@media only screen and (max-width:1000px){
-	
-	.hero-area{
-		height: auto;
-	}
-	
-	.project-container{
-		display: flex;
-		flex-wrap: wrap;
-	}	
-
-	.project-image{
-		margin-top: 25px;
-		height: 150px;
-		width: 250px;
-		border-radius: 20px;
-	}
-
-
-	hr{
-		margin-left: 20px;
-		margin-right: 20px;
-	}
-
-	a{
-		text-decoration: none;
-		color: #94908d;
-	}
-
-	.hamburger{
-		display: none;
-		}
-
-	.hamburger:focus{
-		outline: 0;
-	}
-}
-
 @media only screen and (max-width: 1000px){
 	
 	.hamburger{
@@ -319,60 +297,70 @@ footer{
 		border: 0;
 		background-color: transparent;
 		font-size: .75rem;
-		margin: 20px;
-		align-self: center;
+		margin: 1rem;
 	}
 	
-	ul{
+	.hamburger:focus{
+		outline: 0;
+	}
+
+	.hero-nav-section{
+		display: flex;
+		justify-content: center;
+		background-color: indigo;
+	}
+	
+	.hero-nav-section ul{
 		display: none;
 		background-color: transparent;
 		text-align-last: center;
 		margin: 0px;
 	}
 	
-	ul.show{
-	display: block;
+	.hero-nav-section ul.show{
+		display: block;
 	}
 	
-	hero-nav{
-	display: flex;
-	flex-direction: column-reverse;
-	background-color: indigo;
+	.about-me-information p{
+		justify-content: center;
+		word-wrap: break-word;
+		margin-top: 10rem;
 	}
-}
 	
-@media only screen and (max-width:1000px){
+	.project-section{
+		padding-bottom: 5rem;
+	}
+	
+	.project-section h2{
+		font-size: 1rem;
+		margin-bottom: 5rem;
+		margin-top: 5rem;
 
+	}
+	
+	.FAQ-section{
+		padding-bottom: 5rem;
+	}
+	
 	.hero-socials-icon{
-	display: inline-flex;
-	height: 80px;
-	margin: 13px;
+		height: 2rem;
 	}
-}
-
-@media only screen and (max-width: 1000px){
-   
-    .hero-area{
-        display: inline-block;
-    }
 }
 		
 @media all and (max-width:30em){
 	
  a.button4{
-  display:block;
-  margin:0.2em auto;
+	  display:block;
+	  margin:0.2em auto;
 	}
 }
 	
 @media (max-width: 8.5in){ 
-	
-	:root {font-size: 18px; 
+	 :root {font-size: 18px; 
 	}
 }
 	
 @media (max-width: 5.0in){ 
-	
-	:root { font-size: 16px; 
+	 :root { font-size: 16px; 
 	} 
 } 
