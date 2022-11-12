@@ -11,8 +11,9 @@ body{
 	margin-left: 1rem;
 }
 
-.hero-nav-section{
+.hero-nav-bar{
 	background-color: indigo;
+	min-height: 8vh;
 }
 
 .hero-nav-section ul{
