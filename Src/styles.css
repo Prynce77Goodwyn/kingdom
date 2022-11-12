@@ -6,11 +6,12 @@ body{
 
 .hero-logo{
 	float: left;
+	max-height 6rem;
+	max-width: 6rem;
 }
 
 .hero-nav-section ul{
  	margin: 0;
- 	padding-top: 1rem;
     text-align:center;
     list-style: none;
 }
@@ -18,13 +19,14 @@ body{
 .hero-nav-section li{
 	display: inline-block;
 	padding-right: 10rem;
+	padding-top: 3rem;
 }
 
 .hero-nav-section a{
 	padding: .5rem;
 }
 
-.hero-nav-section a:hover{
+.hero-nav-section li a:hover{
 	background: linear-gradient(45deg, gold, darkgoldenrod);
 	background-size: 300% 400%;
 	animation: animate 1s linear infinite;
@@ -49,6 +51,8 @@ body{
 
 .hero-section{
 	min-height: 60vh;
+	border: thick;
+	border-style: solid;
 }
 
 .hero-text h2{
@@ -86,30 +90,41 @@ body{
 	color: indigo;
 }
 
-.hero-socials-layout{
-	padding-top: 10px;
-	padding-bottom: 5px;
-	text-align: center;
-}
-
-.hero-socials-icon{
-	height: 35px;
-	margin: 13px;
-}
-
 .about-me-section{
+	min-height: 60vh;
+	min-width: 100%;
 	display: flex;
+	justify-content: center;
+	text-align: center;
+	padding-top: 10rem !important;
+	max-height: 100vh;
+	border: thick;
+	border-style: solid;
 }
+
+.about-me-section h1{
+	padding-bottom: 5rem;
+}
+
 
 .project-section{
+	padding: 10rem !important;
 	display: flex;
 	flex-direction: column;
+	min-height: 60vh;
+	min-width: 100%;
+	justify-content: center;
 	text-align: center;
+	max-height: 100vh;
+	border: thick;
+	border-style: solid;
 }
 
 .project-text{
 	font-size: 1rem;
-	font-weight: 300;
+	padding: 1rem;
+	justify-content: center;
+	text-align: center;
 }
 
 .project-card{
@@ -124,8 +139,31 @@ body{
 	justify-content: space-around;
 }
 
+.project-image{
+		margin-top: 25px;
+		height: 150px;
+		width: 250px;
+		border-radius: 20px;
+	}
+
+.project-link{
+		color: gold;
+		text-decoration: none;
+	}
+
+.project-more-info{
+		color: cyan;
+		text-decoration: none;
+	}
+
 .FAQ-section{
+	min-height: 60vh;
+	max-height: 100vh;
+	min-width: 100%;
 	display: flex;
+	padding-top: 10rem !important;
+	border: thick;
+	border-style: solid;
 }
 
 .FAQ-section h3 {
@@ -137,10 +175,15 @@ body{
 }
 
 .merch-section{
+	min-height: 60vh;
+	min-width: 100%;
 	display: flex;
-	flex-direction: column;
+	justify-content: center;
 	text-align: center;
-	padding: 25vh;
+	padding-top: 10rem !important;
+	max-height: 100vh;
+	border: thick;
+	border-style: solid;
 }
 
 .contact-section{
@@ -156,6 +199,8 @@ body{
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	border: thick;
+	border-style: solid;
 }
 
 form{
@@ -213,6 +258,18 @@ input:focus~label,input:valid~label,textarea:focus~label, textarea:valid~label{
 footer{
 	background-color: #010101;
 	color: #C3C2BE;
+	margin-top: 0; margin-right: auto; margin-bottom: 0; margin-left: auto;
+}
+
+.hero-socials-layout{
+	padding-top: .5rem;
+	padding-bottom: 1rem;
+	text-align: center;
+}
+
+.hero-socials-icon{
+	height: 2rem;
+	margin: 1.5rem;
 }
 
 @media only screen and (max-width:1000px){
@@ -233,15 +290,6 @@ footer{
 		border-radius: 20px;
 	}
 
-	.project-link{
-		color: gold;
-		text-decoration: none;
-	}
-
-	.project-more-info{
-		color: purple;
-		text-decoration: none;
-	}
 
 	hr{
 		margin-left: 20px;
