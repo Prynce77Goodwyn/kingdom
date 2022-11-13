@@ -302,6 +302,10 @@ footer{
 
 @media only screen and (max-width: 1000px){
 	
+	:root{
+		font-size: 15px; 
+	}
+	
 	.hero-nav-section{
 		font-size: 2rem;
 	}
@@ -321,19 +325,20 @@ footer{
 	}
 	
 	.project-section{
-		padding-bottom: 5rem;
-		font-size: 2rem;
-		height: 50vh;
-
+	min-height: 100vh;
+	min-width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	border: thick solid;
 	}
-	
+
 	.project-section h2{
-		font-size: 3rem;
-		margin-bottom: 3rem;
-		margin-top: 3rem;
-
+		font-size: 1rem;
+		margin-bottom: 5rem;
 	}
-	
+
 	.project-text{
 		font-size: 1rem;
 		padding: 1rem;
@@ -342,7 +347,7 @@ footer{
 
 	.project-card{
 		width: 20rem;
-		height: 3rem;
+		height: 35rem;
 		box-shadow: .5rem .5rem 1rem .5rem gold;
 	}
 
@@ -366,8 +371,71 @@ footer{
 	}
 	
 	.contact-section{
-		font-size: 10rem;
+		font-size: 5rem;
 	}
+	
+	.contact-form{
+	width: 100%;
+	min-height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.7), gold ), url("images/Duality.png");
+	background-position: center;
+	background-size:auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+form{
+	width: auto;
+	max-width: 100%;
+}
+
+.contact-input-group{
+	margin-bottom: 2.25rem !important;
+	position: relative;
+}
+
+input, textarea{
+	width: 100%;
+	padding: 10px;
+	outline: 0;
+	border: 1px solid #fff;
+	color: #fff;
+	background: transparent;
+}
+
+label{
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	padding: .25rem !important;
+	transition: 0.2s;
+	font-size: .75rem !important; 
+}
+
+.contact-button{
+	padding: 10px 0;
+	color: #fff;
+	outline: none;
+	background: transparent;
+	border: 1px solid #fff;
+	width: 100%;
+}
+
+input:focus~label,input:valid~label,textarea:focus~label, textarea:valid~label{
+	top: -35px;
+}
+
+.contact-form-row{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.contact-form-row .contact-input-group{
+	flex-basis: 46%;
+}
 	
 	.hero-socials-icon{
 		height: 2rem;
@@ -375,11 +443,13 @@ footer{
 }
 		
 @media (max-width: 8.5in){ 
-	 :root {font-size: 18px; 
+	 :root{
+		 font-size: 18px; 
 	}
 }
 	
 @media (max-width: 5.0in){ 
-	 :root { font-size: 16px; 
+	 :root{ 
+		 font-size: 16px; 
 	} 
 } 
