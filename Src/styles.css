@@ -291,6 +291,15 @@ footer{
 	margin: 1.5rem;
 }
 
+@media screen and (prefers-reduced-motion: reduce) {  
+  * {
+    /* Very short durations means JavaScript that relies on events still works */
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
 @media only screen and (max-width: 1000px){
 	
 	.hero-nav-section{
@@ -314,14 +323,41 @@ footer{
 	.project-section{
 		padding-bottom: 5rem;
 		font-size: 2rem;
+		height: 50vh;
 
 	}
 	
 	.project-section h2{
-		font-size: 1rem;
-		margin-bottom: 5rem;
-		margin-top: 5rem;
+		font-size: 3rem;
+		margin-bottom: 3rem;
+		margin-top: 3rem;
 
+	}
+	
+	.project-text{
+		font-size: 1em;
+		padding: 1em;
+		word-wrap: break-word;
+	}
+
+	.project-card{
+		width: 20em;
+		height: 3em;
+		box-shadow: .5em .5em 1em .5em gold;
+	}
+
+	.project-container{
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+
+	.project-image{
+		margin-top: 1em;
+		height: 10em;
+		width: 17em;
+		border-radius: 3em;
+		padding-bottom: 1em;
 	}
 	
 	.FAQ-section{
@@ -330,7 +366,7 @@ footer{
 	}
 	
 	.contact-section{
-		font-size: 2rem;
+		font-size: 4rem;
 	}
 	
 	.hero-socials-icon{
