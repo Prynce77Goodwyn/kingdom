@@ -292,7 +292,19 @@ footer{
 }
 
 @media only screen and (max-width: 1000px){
-		
+	
+	.hero-nav-section{
+		font-size: 2rem;
+	}
+	
+	.hero-section{
+		font-size: 2rem;
+	}
+	
+	.about-me-section{
+		font-size: 2rem;
+	}
+	
 	.about-me-information p{
 		justify-content: center;
 		word-wrap: break-word;
@@ -301,6 +313,8 @@ footer{
 	
 	.project-section{
 		padding-bottom: 5rem;
+		font-size: 2rem;
+
 	}
 	
 	.project-section h2{
@@ -312,6 +326,11 @@ footer{
 	
 	.FAQ-section{
 		padding-bottom: 5rem;
+		font-size: 2rem;
+	}
+	
+	.contact-section{
+		font-size: 2rem;
 	}
 	
 	.hero-socials-icon{
