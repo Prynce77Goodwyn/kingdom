@@ -335,15 +335,15 @@ footer{
 	}
 	
 	.project-text{
-		font-size: 1em;
-		padding: 1em;
+		font-size: 1rem;
+		padding: 1rem;
 		word-wrap: break-word;
 	}
 
 	.project-card{
-		width: 20em;
-		height: 3em;
-		box-shadow: .5em .5em 1em .5em gold;
+		width: 20rem;
+		height: 3rem;
+		box-shadow: .5rem .5rem 1rem .5rem gold;
 	}
 
 	.project-container{
@@ -353,11 +353,11 @@ footer{
 	}
 
 	.project-image{
-		margin-top: 1em;
-		height: 10em;
-		width: 17em;
-		border-radius: 3em;
-		padding-bottom: 1em;
+		margin-top: 1rem;
+		height: 10rem;
+		width: 17rem;
+		border-radius: 3rem;
+		padding-bottom: 1rem;
 	}
 	
 	.FAQ-section{
@@ -366,7 +366,7 @@ footer{
 	}
 	
 	.contact-section{
-		font-size: 4rem;
+		font-size: 10rem;
 	}
 	
 	.hero-socials-icon{
